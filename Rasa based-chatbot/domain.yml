@@ -8,13 +8,13 @@ intents:
   - mood_great
   - mood_unhappy
   - bot_challenge
-  - fight
+  - ass
 
 
 # things our assisstant respond to the user
 responses:
   utter_greet:
-  - text: "Hello there"
+  - text: "General Kenobi.."
   - text: "Hey! How are you ?"
   - text: "What's up dude?"
   - text: "Yo Everything okay ?"
@@ -24,6 +24,11 @@ responses:
     image: "https://i.imgur.com/nGF1K8f.jpg"
   - text: "Yo check this out:"
     image: "https://i.redd.it/55mmkzio1g061.jpg"
+
+  utter_ass: 
+  - text: "This much anger are you okay ?"
+  - text: "your family loves you "
+  - text: "I see so that's how you are supposed to talk, I am in"
 
 
   utter_did_that_help:
@@ -37,7 +42,8 @@ responses:
 
   utter_iamabot:
   - text: "I am a Anton, powered by Rasa. I was made for greater purpose"
-  - text: "thy shall speak your name first . you shall mine name, tarnish."
+  - text: "thy shall speak your name first .then you shall have mine name, tarnish."
+  - text: "Yes, What do you seek human ?"
 
 session_config:
   session_expiration_time: 60

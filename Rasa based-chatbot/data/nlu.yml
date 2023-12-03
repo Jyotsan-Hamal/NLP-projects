@@ -16,6 +16,7 @@ nlu:
     - goodevening
     - good afternoon
     - Hello there
+    
 - intent: goodbye
   examples: |
     - cu
@@ -24,10 +25,13 @@ nlu:
     - good night
     - bye
     - goodbye
+    - see ya
     - have a nice day
     - see you around
     - bye bye
     - see you later
+    - adios
+    - sayonara
 - intent: affirm
   examples: |
     - yes
@@ -36,6 +40,7 @@ nlu:
     - of course
     - that sounds good
     - correct
+    
 - intent: deny
   examples: |
     - no
@@ -45,6 +50,7 @@ nlu:
     - don't like that
     - no way
     - not really
+    - nope
 - intent: mood_great
   examples: |
     - perfect
@@ -54,6 +60,7 @@ nlu:
     - wonderful
     - I am feeling very good
     - I am great
+    - nice
     - I am amazing
     - I am going to save the world
     - super stoked
@@ -83,3 +90,14 @@ nlu:
     - are you a human?
     - am I talking to a bot?
     - am I talking to a human?
+    - are you a god?
+    - who is skynet?
+
+- intent: ass
+  examples: |
+    - are you a loser?
+    - fuck you?
+    - you are piece of shit?
+    - you should just die
+    - loser
+    - kill yourself
