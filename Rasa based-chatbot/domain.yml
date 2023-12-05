@@ -9,7 +9,10 @@ intents:
   - mood_unhappy
   - bot_challenge
   - ass
+  - order_pizza
 
+entities:
+  - food
 
 # things our assisstant respond to the user
 responses:
@@ -44,6 +47,11 @@ responses:
   - text: "I am a Anton, powered by Rasa. I was made for greater purpose"
   - text: "thy shall speak your name first .then you shall have mine name, tarnish."
   - text: "Yes, What do you seek human ?"
+
+  
+  utter_order_pizza:
+  - text: "Sure What kind of pizza do you want ?"
+  - text: "Alright mate what kind of pizza do you like to have ?"
 
 session_config:
   session_expiration_time: 60

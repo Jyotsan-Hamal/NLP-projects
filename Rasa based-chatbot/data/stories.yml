@@ -10,10 +10,7 @@ stories:
   - action: utter_happy
 
 
-- story: ass talk
-  steps:
-  - intent: ass
-  - action: utter_ass
+
 
 - story: sad path 1
   steps:
@@ -39,3 +36,23 @@ stories:
   steps:
   - intent: greet
   - action: utter_greet
+
+
+
+- story: ass talk
+  steps:
+  - intent: ass
+  - action: utter_ass
+
+
+- story: order pizza 1
+  steps:
+  - intent: order_pizza
+  - action: utter_order_pizza
+
+- story: order pizza 2
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: order_pizza
+  - action: utter_order_pizza

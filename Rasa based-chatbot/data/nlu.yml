@@ -101,3 +101,12 @@ nlu:
     - you should just die
     - loser
     - kill yourself
+
+- intent: order_pizza
+  examples: |
+    - I want to order [pizza](food)
+    - I like to have a [pizza](food)
+    - Order me [pizza](food)
+    - How about [pizza](food)
+    - can i get a [pizza](food)
+    - i'd like to have [pizza](food)
