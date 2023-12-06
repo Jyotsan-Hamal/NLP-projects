@@ -1,62 +1,52 @@
-version: "3.1"
-
+version: '3.1'
 intents:
-  - greet
-  - goodbye
-  - affirm
-  - deny
-  - mood_great
-  - mood_unhappy
-  - bot_challenge
-  - ass
-  - order_pizza
-
+- affirm
+- ass
+- bot_challenge
+- deny
+- goodbye
+- greet
+- inform_food
+- mood_great
+- mood_unhappy
+- order_food
+- order_pizza
 entities:
-  - food
-
-# things our assisstant respond to the user
+- food
 responses:
   utter_greet:
-  - text: "General Kenobi.."
-  - text: "Hey! How are you ?"
-  - text: "What's up dude?"
-  - text: "Yo Everything okay ?"
-  
+  - text: General Kenobi..
+  - text: Hey! How are you ?
+  - text: What's up dude?
+  - text: Yo Everything okay ?
   utter_cheer_up:
-  - text: "Here is something to cheer you up:"
-    image: "https://i.imgur.com/nGF1K8f.jpg"
-  - text: "Yo check this out:"
-    image: "https://i.redd.it/55mmkzio1g061.jpg"
-
-  utter_ass: 
-  - text: "This much anger are you okay ?"
-  - text: "your family loves you "
-  - text: "I see so that's how you are supposed to talk, I am in"
-
-
+  - text: 'Here is something to cheer you up:'
+    image: https://i.imgur.com/nGF1K8f.jpg
+  - text: 'Yo check this out:'
+    image: https://i.redd.it/55mmkzio1g061.jpg
+  utter_ass:
+  - text: This much anger are you okay ?
+  - text: 'your family loves you '
+  - text: I see so that's how you are supposed to talk, I am in
   utter_did_that_help:
-  - text: "Did that help you?"
-  - text: "No need to say thank you, remember bro before h**. "
+  - text: Did that help you?
+  - text: 'No need to say thank you, remember bro before h**. '
   utter_happy:
-  - text: "Great, carry on!"
-
+  - text: Great, carry on!
   utter_goodbye:
-  - text: "Bye"
-
+  - text: Bye
   utter_iamabot:
-  - text: "I am a Anton, powered by Rasa. I was made for greater purpose"
-  - text: "thy shall speak your name first .then you shall have mine name, tarnish."
-  - text: "Yes, What do you seek human ?"
-
-  
+  - text: I am a Anton, powered by Rasa. I was made for greater purpose
+  - text: thy shall speak your name first .then you shall have mine name, tarnish.
+  - text: Yes, What do you seek human ?
   utter_order_pizza:
-  - text: "Sure What kind of pizza do you want ?"
-  - text: "Alright mate what kind of pizza do you like to have ?"
-
-
+  - text: Sure What kind of pizza do you want ?
+  - text: Alright mate what kind of pizza do you like to have ?
 actions:
-  - action_extract_food_entity
-  
+- utter_greet
+- action_confirm_order
+- action_order_food
+- action_extract_food_entity
 session_config:
   session_expiration_time: 60
   carry_over_slots_to_new_session: true

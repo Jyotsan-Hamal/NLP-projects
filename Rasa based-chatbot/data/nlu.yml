@@ -16,7 +16,6 @@ nlu:
     - goodevening
     - good afternoon
     - Hello there
-    
 - intent: goodbye
   examples: |
     - cu
@@ -40,7 +39,6 @@ nlu:
     - of course
     - that sounds good
     - correct
-    
 - intent: deny
   examples: |
     - no
@@ -92,7 +90,6 @@ nlu:
     - am I talking to a human?
     - are you a god?
     - who is skynet?
-
 - intent: ass
   examples: |
     - are you a loser?
@@ -101,7 +98,6 @@ nlu:
     - you should just die
     - loser
     - kill yourself
-
 - intent: order_pizza
   examples: |
     - I want to order [pizza](food)
@@ -110,3 +106,19 @@ nlu:
     - How about [pizza](food)
     - can i get a [pizza](food)
     - i'd like to have [pizza](food)
+- intent: order_food
+  examples: |
+    - I want to order a food.
+    - Order me a food.
+    - Can I get some food please.
+    - Let's order some food.
+    - Order some food
+- intent: inform_food
+  examples: |
+    - order [steak](food)
+    - [Mo:Mo](food)
+    - [momo](food)
+    - order [burger](food)
+    - [pasta](food)
+    - [sushi](food)
+    - [burger](food)

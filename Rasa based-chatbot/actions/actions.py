@@ -20,3 +20,28 @@ class ExtractFoodEntity(Action):
         return []
 
 
+class OrderFoodAction(Action):
+
+    def name(self) -> Text:
+        return "action_order_food"
+    def run(self, dispatcher: CollectingDispatcher,
+            tracker: Tracker,
+            domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
+        dispatcher.utter_message(text= f"Sure, Which kind of food would you like to order ?")
+        return []
+    
+    
+class ConfirmFoodAction(Action):
+
+    def name(self) -> Text:
+        return "action_confirm_order"
+    def run(self, dispatcher: CollectingDispatcher,
+            tracker: Tracker,
+            domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
+
+        food = next(tracker.get_latest_entity_values('food'),None)
+        if food:
+            dispatcher.utter_message(text= f"I have order {food} as your food choice.")
+        else:
+            dispatcher.utter_message(text="Sorry i couldn't detect the food choice")
+        return []
