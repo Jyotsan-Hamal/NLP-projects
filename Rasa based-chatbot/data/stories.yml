@@ -48,11 +48,11 @@ stories:
 - story: order pizza 1
   steps:
   - intent: order_pizza
-  - action: utter_order_pizza
+  - action: action_extract_food_entity
 
 - story: order pizza 2
   steps:
   - intent: greet
   - action: utter_greet
   - intent: order_pizza
-  - action: utter_order_pizza
+  - action: action_extract_food_entity

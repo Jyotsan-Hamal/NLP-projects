@@ -53,6 +53,10 @@ responses:
   - text: "Sure What kind of pizza do you want ?"
   - text: "Alright mate what kind of pizza do you like to have ?"
 
+
+actions:
+  - action_extract_food_entity
+  
 session_config:
   session_expiration_time: 60
   carry_over_slots_to_new_session: true
