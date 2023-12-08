@@ -11,6 +11,7 @@ intents:
 - mood_unhappy
 - order_food
 - order_pizza
+- welcome
 entities:
 - food
 responses:
@@ -37,11 +38,16 @@ responses:
   - text: Bye
   utter_iamabot:
   - text: I am a Anton, powered by Rasa. I was made for greater purpose
-  - text: thy shall speak your name first .then you shall have mine name, tarnish.
+  - text: thy shall speak your name first .then you shall ask question, tarnish.
   - text: Yes, What do you seek human ?
   utter_order_pizza:
   - text: Sure What kind of pizza do you want ?
   - text: Alright mate what kind of pizza do you like to have ?
+
+  utter_welcome:
+  - text: You are welcome my friend
+  - text: that's what i am here for
+  - text: Don't say thank you to me, instead help 3 others people in help and tell them to help 3 others.
 actions:
 - utter_greet
 - action_confirm_order

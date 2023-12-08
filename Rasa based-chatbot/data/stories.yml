@@ -8,6 +8,8 @@ stories:
   - action: utter_greet
   - intent: mood_great
   - action: utter_happy
+  - intent: welcome
+  - action: utter_welcome
 
 
 
@@ -21,7 +23,8 @@ stories:
   - action: utter_did_that_help
   - intent: affirm
   - action: utter_happy
-
+  - intent: welcome
+  - action: utter_welcome
 - story: sad path 2
   steps:
   - intent: greet
@@ -43,6 +46,8 @@ stories:
   steps:
   - intent: ass
   - action: utter_ass
+  - intent: welcome
+  - action: utter_welcome
 
 
 - story: order pizza 1
@@ -56,6 +61,8 @@ stories:
   - action: utter_greet
   - intent: order_pizza
   - action: action_extract_food_entity
+  - intent: welcome
+  - action: utter_welcome
 
 - story: order food
   steps:
@@ -65,6 +72,8 @@ stories:
   - action: action_order_food
   - intent: inform_food
   - action: action_confirm_order
+  - intent: welcome
+  - action: utter_welcome
   
 - story: interactive_story_1
   steps:
@@ -76,3 +85,5 @@ stories:
     entities:
     - food: burger
   - action: action_confirm_order
+  - intent: welcome
+  - action: utter_welcome

@@ -16,6 +16,14 @@ nlu:
     - goodevening
     - good afternoon
     - Hello there
+    - welcome
+- intent: welcome
+  examples: |
+    - thanks you
+    - thanks
+    - thnks bro
+    - thank you so much
+    
 - intent: goodbye
   examples: |
     - cu
