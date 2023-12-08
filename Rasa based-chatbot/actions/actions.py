@@ -45,3 +45,21 @@ class ConfirmFoodAction(Action):
         else:
             dispatcher.utter_message(text="Sorry i couldn't detect the food choice")
         return []
+
+class ActionAskOrder(Action):
+    def name(self) -> str:
+        return "action_ask_order"
+
+    def run(self, dispatcher: CollectingDispatcher,
+            tracker: Tracker,
+            domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
+        customer_name = tracker.get_slot("customer_name")
+
+        if customer_name is None:
+            response = "It seems you haven't said your name, so what would you like to order then?"
+        else:
+            response = f"Okay {customer_name}, what do you want to order in Meat Groceries?"
+
+        dispatcher.utter_message(text=response)
+
+        return []

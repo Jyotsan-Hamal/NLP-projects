@@ -12,28 +12,48 @@ intents:
 - order_food
 - order_pizza
 - welcome
+- provide_name
+
+
+
 entities:
 - food
+- customer_name
+
+
+slots:
+  customer_name:
+    type: text
+    mappings:
+      - type: from_entity
+        entity: customer_name
+
 responses:
   utter_greet:
-  - text: General Kenobi..
-  - text: Hey! How are you ?
-  - text: What's up dude?
-  - text: Yo Everything okay ?
+  - text: "Hi, welcome to Meat Groceries. What is your name?"
+
+  utter_ask_order:
+  - text: "Okay {customer_name}, what do you want to order in Meat Groceries?"
+  - text: "{customer_name} what would you like to order then ?"
+
   utter_cheer_up:
   - text: 'Here is something to cheer you up:'
     image: https://i.imgur.com/nGF1K8f.jpg
   - text: 'Yo check this out:'
     image: https://i.redd.it/55mmkzio1g061.jpg
+
   utter_ass:
   - text: This much anger are you okay ?
   - text: 'your family loves you '
   - text: I see so that's how you are supposed to talk, I am in
+
   utter_did_that_help:
   - text: Did that help you?
-  - text: 'No need to say thank you, remember bro before h**. '
+  
+
   utter_happy:
   - text: Great, carry on!
+
   utter_goodbye:
   - text: Bye
   utter_iamabot:
@@ -48,11 +68,14 @@ responses:
   - text: You are welcome my friend
   - text: that's what i am here for
   - text: Don't say thank you to me, instead help 3 others people in help and tell them to help 3 others.
+  - text: 'No need to say thank you, remember bro before h**. '
+
 actions:
 - utter_greet
 - action_confirm_order
 - action_order_food
 - action_extract_food_entity
+- action_ask_order
 session_config:
   session_expiration_time: 60
   carry_over_slots_to_new_session: true

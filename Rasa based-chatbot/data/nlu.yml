@@ -17,12 +17,21 @@ nlu:
     - good afternoon
     - Hello there
     - welcome
+    - provide_name
 - intent: welcome
   examples: |
     - thanks you
     - thanks
     - thnks bro
     - thank you so much
+
+- intent: provide_name
+  examples: |
+    - My name is [John](customer_name)
+    - I am [Josh](customer_name)
+    - Call me [Mark](customer_name)
+    - This is [Ajay](customer_name)
+    - Names bond, [James](customer_name) Bond
     
 - intent: goodbye
   examples: |

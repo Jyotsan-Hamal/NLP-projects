@@ -1,0 +1,28 @@
+[
+  {
+    "tag_name": "entity",
+    "ids_to_tags": {
+      "1": "B-food",
+      "2": "I-food",
+      "3": "L-food",
+      "4": "U-food",
+      "5": "B-provide_name",
+      "6": "I-provide_name",
+      "7": "L-provide_name",
+      "8": "U-provide_name",
+      "0": "O"
+    },
+    "tags_to_ids": {
+      "B-food": 1,
+      "I-food": 2,
+      "L-food": 3,
+      "U-food": 4,
+      "B-provide_name": 5,
+      "I-provide_name": 6,
+      "L-provide_name": 7,
+      "U-provide_name": 8,
+      "O": 0
+    },
+    "num_tags": 9
+  }
+]

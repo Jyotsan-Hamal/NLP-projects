@@ -49,6 +49,16 @@ stories:
   - intent: welcome
   - action: utter_welcome
 
+- story: customer orders meat
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: provide_name
+    entities:
+    - customer_name: "John"
+  - action: action_ask_order
+  
+
 
 - story: order pizza 1
   steps:
