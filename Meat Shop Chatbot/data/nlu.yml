@@ -1,0 +1,43 @@
+version: "3.1"
+
+nlu:
+- intent: greet
+  examples: |
+    - hey
+    - hello
+    - hi
+    - hello there
+    - good morning
+    - good evening
+
+
+- intent: goodbye
+  examples: |
+    - cu
+    - good by
+    - cee you later
+    - good night
+    - bye
+    - goodbye
+    - have a nice day
+    - see you around
+
+- intent: order_meat
+  examples: |
+    - I would like to order some meat
+    - Can I get a kilo of chicken?
+    - I want to buy beef
+    - I want to order a meat 
+- intent: reject
+  examples: |
+    - no,It's wrong
+    - No
+    - I want to order again
+    - It's wrong
+- intent: accept
+  examples: |
+    - Yes
+    - This is the right order
+    - yes thank you
+    - that's right
+    - okay

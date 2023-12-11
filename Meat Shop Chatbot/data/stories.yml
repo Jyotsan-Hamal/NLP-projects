@@ -1,0 +1,16 @@
+version: "3.1"
+
+stories:
+
+- story: User Order Meat with all the details
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: order_meat
+    entities:
+      - meat_type: "chicken"
+      - quantity: "1Kg"
+      - location: "putalisadak,kathmandu"
+  - action: action_confirm_order
+  - intent: 
+ 

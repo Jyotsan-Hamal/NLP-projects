@@ -1,0 +1,44 @@
+version: "3.1"
+
+intents:
+  - greet
+  - goodbye
+  - affirm
+  - deny
+  - mood_great
+  - mood_unhappy
+  - bot_challenge
+
+responses:
+  utter_greet:
+  - text: "Hi there , Welcome to Jake Meat shop. What would you like to order ?"
+  - text: "Hello , You are in the service of Jake Meat shop.What would you like to order ?"
+  - text: "This is Jake Meat shop, What do you want to order buddy?"
+
+  utter_cheer_up:
+  - text: "Here is something to cheer you up:"
+    image: "https://i.imgur.com/nGF1K8f.jpg"
+
+
+ utter_confirm_order:
+ - text: ""
+
+  utter_did_that_help:
+  - text: "Did that help you?"
+
+  utter_happy:
+  - text: "Great, carry on!"
+
+  utter_goodbye:
+  - text: "Bye"
+
+  utter_iamabot:
+  - text: "I am a bot, powered by Rasa."
+
+
+ 
+action:
+- action_confirm_order
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
