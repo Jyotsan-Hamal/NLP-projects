@@ -42,6 +42,7 @@ stories:
 
 
 
+#If some one tries to became sm
 - story: ass talk
   steps:
   - intent: ass
@@ -49,6 +50,7 @@ stories:
   - intent: welcome
   - action: utter_welcome
 
+# Meat Convo
 - story: customer orders meat
   steps:
   - intent: greet
